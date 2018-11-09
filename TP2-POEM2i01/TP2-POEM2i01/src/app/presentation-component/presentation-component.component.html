@@ -1,0 +1,28 @@
+<div class="col-4">
+    <div>
+        <label>Présentation M2I POE ANGULAR :</label>
+        <input type="text" class="form-control" [(ngModel)]="nom" placeholder="nom" />
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" (click)="ajouterUtilisateur()">AJOUTER</button>
+        <button type="button" class="btn btn-danger" (click)="viderUtilisateur()">VIDER</button>
+    </div>
+</div>
+
+<hr>
+
+<div class="col-4">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let utilisateur of tabUtilisateur; let i = index" >
+            <div class="d-flex justify-content-between">
+                <div>
+                  {{i}} 
+                  {{utilisateur.nom}} 
+                </div>
+                <div>
+                  <button type="button" class="btn btn-danger" (click)="supprimerUtilisateur(i)">DELETE</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

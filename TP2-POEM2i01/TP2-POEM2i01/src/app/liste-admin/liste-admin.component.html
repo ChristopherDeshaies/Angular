@@ -1,0 +1,13 @@
+<div style="margin-top:10%;">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let admin of tabAdmin; let i = index" >
+          <div class="d-flex justify-content-around" (click)='visible(i)' >
+            <span>{{i}}</span>
+            <span>{{admin.nom}}</span>
+            <span>{{admin.nbRole}}</span>
+          </div>
+    </li>
+  </ul>
+</div>
+
+<app-comptdetailadmin-component [nom]="adminNom" [nbRole]="adminNbRole" [style.display]="adminNom ? 'block' : 'none'"></app-comptdetailadmin-component>

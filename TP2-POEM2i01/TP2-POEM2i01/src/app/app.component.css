@@ -1,0 +1,19 @@
+h1{
+    color: #A52A2A;
+}
+
+h2{
+    background-color: #DEB887;
+    margin:0;
+    color: #A52A2A;
+}
+
+a{
+    color: green;
+}
+
+li{
+    font-size: 200%;
+    color:#A52A2A;
+    padding-top: 10px;
+}
